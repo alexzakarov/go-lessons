@@ -7,5 +7,5 @@ func main() {
 }
 
 func Sum(value1, value2 int64) int64 {
-	return value1 + value2
+	return value1 + (value2 * 2)
 }
