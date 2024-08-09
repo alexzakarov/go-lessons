@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	name := "Hakan"
+	surname := "Yenidogan"
+
 	fmt.Println(Sum(1, 1))
+	fmt.Println(msg(name, surname))
 	fmt.Println(sum(5, 10, 15, 31))
 }
 
@@ -19,4 +23,8 @@ func sum(number ...int) int {
 		sum += value
 	}
 	return sum
+}
+
+func msg(name, surname string) string {
+	return fmt.Sprintf("Hello %s, %s", name, surname)
 }
