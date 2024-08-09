@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(Sum(1.0, 1.0))
+	fmt.Println(Sum(1, 1))
 }
 
-func Sum(value1, value2 float64) float64 {
+func Sum(value1, value2 int64) int64 {
 	return value1 + value2
 }
